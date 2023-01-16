@@ -102,8 +102,8 @@ li {
   font-size: 14px;
 }
 
-#services {
-  margin: 60px;
+#service {
+  margin: 120px 60px;
 }
 
 .service-main-card {
@@ -141,62 +141,138 @@ li {
   font-size: 24px;
 }
 
-
-#team{
-    margin: 60px;
+#team {
+  margin: 120px 60px;
 }
 
-.team-content{
-    padding-top: 30px;
-    display: flex;
-    gap: 30px;
-    justify-content: center;
+.team-content {
+  padding-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
 }
 
-.team-card{
-    width: 20.4%;
+.team-card {
+  width: 20.4%;
 }
 
-.team-img{
-    width: 250px;
-    height: 350px;
+.team-img {
+  width: 250px;
+  height: 350px;
 }
 
-.team-img img{
-    width: 100%;
+.team-img img {
+  width: 100%;
 }
 
-.team-info{
-    position: relative;
-    margin-top: -105px;
-    height: 100px;
-    background-color: #201785d1;
-    color: #fff;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+.team-info {
+  position: relative;
+  margin-top: -105px;
+  height: 100px;
+  background-color: #201785d1;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-.team-social{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.team-social {
+  background-color: #fff;
+  margin: -17px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.team-icon{
-    border: 1px solid rgba(2, 1, 1, 0.36);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 18px;
-    padding: 5px;
+.team-icon {
+  background-color: #f5f5f5;
+  border: 1px solid rgba(2, 1, 1, 0.36);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  padding: 5px;
 }
 
-.team-icon a{
-    color: #818a91;
+.team-icon a {
+  color: #818a91;
 }
 
-.team-icon:hover + .team-icon a{
-    color: var(--team-icon);
+ion-icon {
+  transition: all 400ms;
+}
+
+.team-icon:hover ion-icon {
+  color: var(--team-icon);
+}
+
+#testimonials {
+  margin: 120px 60px;
+}
+
+.testimonial-content {
+  padding: 30px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+
+.testimonial-card {
+  padding: 40px 30px;
+  width: 40%;
+  box-shadow: 0px 0px 20px -10px rgb(0 0 0 / 30%);
+}
+
+.testimonial-card-top {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.testimonial-img {
+  display: flex;
+  background-color: #0f67f6;
+  border-radius: 50%;
+  padding: 3px;
+  width: 80px;
+}
+
+.testimonial-img img {
+  border-radius: 50%;
+  width: 100%;
+}
+
+.testimonial-text h4 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 3px;
+}
+
+.testimonial-text p {
+  color: rgba(0, 0, 0, 0.606);
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.testimonial-text ion-icon {
+  font-size: 18px;
+  font-weight: 800;
+  color: gold;
+}
+
+.testimonial-card-top span {
+  font-size: 36px;
+  color: rgba(0, 0, 0, 0.15);
+  position: relative;
+  top: -30px;
+  right: -30%;
+}
+
+.testimonial-card-buttom {
+  margin-top: 10px;
+  color: gray;
+  font-size: 18px;
 }
